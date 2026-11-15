@@ -6,7 +6,6 @@
 - **Project Title:** Fitness Data Tracker
 - **PS Number:** 62
 - **University:** Rungta International Skills University
-- **School:** School of Computer Science and Engineering
 - **Course:** Bachelor of Technology (B.Tech)
 - **Branch:** Computer Science and Engineering
 - **Semester:** First Semester
