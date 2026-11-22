@@ -6,7 +6,6 @@
 - **Project Title:** Fitness Data Tracker
 - **PS Number:** 62
 - **University:** Rungta International Skills University
-- **School:** School of Computer Science and Engineering
 - **Course:** Bachelor of Technology (B.Tech)
 - **Branch:** Computer Science and Engineering
 - **Semester:** First Semester
@@ -108,7 +107,29 @@ Fitness_Data_Tracker/
 - Best Day: Day 2 (12000 steps)
 - Goals Achieved: 2/3
 
-## 10. Concepts Used
+
+## 10. Output Screenshots
+
+### 1. BMI Calculator
+![BMI Calculator](screenshots/BMI_Calculator.png)
+
+### 2. Fitness Chart
+![Fitness Chart](screenshots/Fitness_Chart.png)
+
+### 3. Test Case 01 - Normal Input
+![Test Case 01](screenshots/Test_case-01_Normal_Input.png)
+
+### 4. Test Case 02 - Minimum Input
+![Test Case 02](screenshots/Test_Case-02_Minimum_Input.png)
+
+### 5. Test Case 03 - Invalid Input
+![Test Case 03](screenshots/Test_Case-03_Invalid_Input.png)
+
+### 6. Test Case 04 - Weekly Summary
+![Test Case 04](screenshots/Test_Case-04_Weekly_Summary.png)
+
+
+## 11. Concepts Used
 
 - Python Lists
 - Functions
@@ -118,13 +139,13 @@ Fitness_Data_Tracker/
 - Mathematical Calculations
 - Data Visualization
 
-## 11. Conclusion
+## 12. Conclusion
 
 The Fitness Data Tracker project provides a simple way to monitor daily fitness activities. It helps users track their steps, calories burned, BMI, and daily fitness goals.
 
 This project demonstrates the practical application of Python programming concepts such as lists, functions, calculations, and data visualization.
 
-## 12. Author
+## 13. Author
 
 **Uday Kumar**
 
