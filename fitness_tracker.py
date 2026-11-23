@@ -25,17 +25,18 @@ def add_record():
         steps_list.append(steps)
         calories_list.append(calories)
 
-        day = len(steps_list)
+        day = len(steps_list) #len() counts the number of elements in a list.
 
-        goal_status = "Yes" if steps >= GOAL else "No"
+        goal_status = "Yes" if steps >= GOAL else "No" #ternary conditional expression
         percentage = (steps / GOAL) * 100
 
         print(
-            f"Record saved for Day {day}. "
+            f"Record saved for Day {day}. " #f before a string makes it an f-string.
             f"Goal achieved: {goal_status} "
-            f"({percentage:.2f}% of goal)"
+            f"({percentage:.2f}% of goal)" #displays the percentage with two decimal places.
         )
 
+#except handles an error that occurs in the try block
     except ValueError:
         print("Invalid input. Enter a non-negative whole number.")
         print("Record not saved.")
