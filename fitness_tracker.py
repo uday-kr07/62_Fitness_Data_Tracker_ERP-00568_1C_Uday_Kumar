@@ -44,7 +44,7 @@ def add_record():
 
 # Function to calculate average steps
 def calculate_average():
-    if len(steps_list) == 0:
+    if len(steps_list) == 0: 
         return 0
     return sum(steps_list) / len(steps_list)
 
@@ -60,7 +60,7 @@ def find_best_day():
         return None
 
     best_steps = max(steps_list)
-    best_day = steps_list.index(best_steps) + 1
+    best_day = steps_list.index(best_steps) + 1 # index starts from 0 so + 1 converts the position into the actual day number.
 
     return best_day, best_steps
 
@@ -104,7 +104,7 @@ def show_summary():
     best_day, best_steps = find_best_day()
 
     goals_achieved = sum(
-        1 for steps in steps_list if steps >= GOAL
+        1 for steps in steps_list if steps >= GOAL #generator expression
     )
 
     print("\n----- WEEKLY FITNESS SUMMARY -----")
@@ -115,17 +115,18 @@ def show_summary():
     print("----------------------------------")
 
 
+# chart function
 def show_chart():
     if len(steps_list) == 0:
         print("No records available to display.")
         return
 
-    days = [f"Day {i + 1}" for i in range(len(steps_list))]
+    days = [f"Day {i + 1}" for i in range(len(steps_list))] #Creates labels
 
     plt.bar(days, steps_list, label="Daily Steps")
 
     plt.axhline(
-        y=GOAL,
+        y=GOAL, #Goal 10,000
         color="red",
         linestyle="--",
         label="10000 Step Goal"
@@ -141,7 +142,7 @@ def show_chart():
     plt.show()
 
 
-
+#main ;
 def main():
     while True:
         print("\n===== FITNESS DATA TRACKER =====")
@@ -152,7 +153,7 @@ def main():
         print("5. Exit")
 
         choice = input("Enter your choice: ")
-
+ 
         if choice == "1":
             add_record()
 
@@ -173,5 +174,5 @@ def main():
             print("Invalid menu option. Please try again.")
 
 
-if __name__ == "__main__":
+if __name__ == "__main__": #Checks file executed directly
     main()
